@@ -1,0 +1,113 @@
+.Caja1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(227, 227, 227);
+}
+
+.cajafoto {
+    width: 40%;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+.flex {
+    display: flex
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.none-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border-bottom: 1px solid black;
+}
+
+.Nav-bar {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 85px 25px 85px;
+    height: 80px;
+    display: flex; 
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 24px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+
+  }
+
+  .button {
+    background-color: #A47864;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 240px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f0e2;
+    padding: 85px
+  }
+
+  .about-me{
+    width: 40%;
+    height: auto;
+    text-align: left;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .txt-1 {
+    font-size: 24px;
+    color: #282938;
+    font-weight: bold;
+  }
+
+  .txt-2 {
+    font-size: 56px;
+    color: #282938;
+    font-weight: 800;
+  }
+
+  .txt-3 {
+    font-size: 24px;
+    color: #282938;
+    font-weight: 300;
+  }
