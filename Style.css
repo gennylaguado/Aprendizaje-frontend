@@ -126,6 +126,7 @@ ul {
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(300px * 16);
+    margin: 80px;
   }
 
   .slider .slide {
