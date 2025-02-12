@@ -180,3 +180,10 @@ ul {
     border-radius: 600px;
   }
 
+  .default-row{
+    display: flex;
+  }
+
+  .justify-center{
+    justify-content: center;
+  }
