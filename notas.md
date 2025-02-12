@@ -624,3 +624,480 @@ Usualmente la forma de trabajar con un repositorio es la siguiente:
 7. Se fusionan los cambios de la rama principal en la rama secundaria con `git merge main`. Esto se hace para tener los cambios más recientes de la rama principal en la rama secundaria (nuestra rama de trabajo).
 8. Se suben los cambios de la rama secundaria al repositorio remoto con `git push -u origin nombre_rama`. Esto se hace para subir los cambios al repositorio remoto y que otros colaboradores puedan ver los cambios y colaborar.
 9. Se crea una solicitud de extracción (pull/merge request) en GitHub o GitLab para fusionar los cambios de la rama secundaria en la rama principal. Esto se hace para que otros colaboradores revisen los cambios y se aseguren de que no haya errores antes de fusionar los cambios en la rama principal. Antes de ser aceptado el pull request, los demás colaboradores todavia no tienen los cambios en su rama principal, es después de aceptado que los demás colaboradores pueden descargar los cambios con `git pull origin main`.
+
+## JavaScript
+
+![Descripción de la imagen](https://raw.githubusercontent.com/cat-milk/Anime-Girls-Holding-Programming-Books/master/Javascript/Maya_Yamato_Holding_Javascript_For_Absolute_Beginners.png)
+
+### Introducción a JavaScript
+
+JavaScript es un lenguaje de programación que se utiliza para crear páginas web interactivas. Es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. JavaScript se ejecuta en el navegador web del usuario, lo que permite interactuar con los elementos de la página, realizar cálculos, enviar y recibir datos, y mucho más.
+
+- **¿Qué diferencia a un lenguaje de programación de un lenguaje de marcado?:** Un lenguaje de programación se utiliza para escribir instrucciones que una computadora puede entender y ejecutar, mientras que un lenguaje de marcado se utiliza para definir la estructura y el contenido de un documento. Una diferencia clave es que un lenguaje de programación se ejecuta, mientras que un lenguaje de marcado se interpreta. Con un lenguaje de programación, se pueden realizar cálculos, tomar decisiones, y realizar acciones, mientras que con un lenguaje de marcado, se definen los elementos de la página, como títulos, párrafos, imágenes, etc.
+
+- **¿Qué es un lenguaje de alto nivel?:** Un lenguaje de alto nivel es un lenguaje de programación que se asemeja al lenguaje humano y es fácil de leer y escribir. Los lenguajes de alto nivel se utilizan para escribir programas que se ejecutan en una computadora. Algunos ejemplos de lenguajes de alto nivel son Python, Java, C++, y JavaScript.
+
+- **¿Qué significa que un lenguaje de programación sea interpretado?:** Un lenguaje de programación interpretado es un lenguaje que se ejecuta línea por línea, en tiempo real, por un intérprete. Esto significa que el código se ejecuta a medida que se escribe, sin necesidad de compilarlo antes de ejecutarlo. JavaScript es un lenguaje de programación interpretado, lo que significa que se puede escribir y ejecutar en un navegador web sin necesidad de compilarlo.
+
+### ¿Por qué JavaScript?
+
+JavaScript es uno de los lenguajes de programación más populares y ampliamente utilizados en el mundo. Es un lenguaje versátil que se puede utilizar para crear aplicaciones web, juegos, aplicaciones móviles, servidores, y mucho más. JavaScript es un lenguaje de programación esencial para cualquier desarrollador web, ya que permite crear páginas web interactivas y dinámicas.
+
+### Uso de la consola del navegador
+
+La consola del navegador es una herramienta que permite interactuar con el código JavaScript de una página web. Se puede utilizar para depurar código, probar funciones, y ver mensajes de error. La consola del navegador se puede abrir en la mayoría de los navegadores web presionando F12 o haciendo clic derecho en la página y seleccionando "Inspeccionar".
+
+- ¿Qué es depurar código?: Depurar código es el proceso de identificar y corregir errores en un programa. La consola del navegador es una herramienta útil para depurar código JavaScript, ya que muestra mensajes de error y permite ejecutar código en tiempo real. Podemos decir que depurar es como ir buscando errores en el código, y corregirlos para que el programa funcione correctamente.
+
+Para escribir código JavaScript, se puede abrir la consola del navegador y escribir el código directamente en la consola. Por ejemplo, se puede escribir `console.log("Hola, mundo")` y presionar Enter para ver el mensaje "Hola, mundo" en la consola.
+
+>Por otra parte, lo usual es escribir el código JavaScript en un archivo con la extensión .js y enlazarlo con el archivo HTML con la etiqueta `<script src="archivo.js"></script>`. De esta forma, el código JavaScript se ejecuta cuando se carga la página web.
+
+### Sintaxis básica
+
+La sintaxis de un lenguaje de programación se refiere a las reglas y estructuras que se utilizan para escribir código. Es decir, el texto que se escribe en un lenguaje de programación debe seguir ciertas reglas para que la computadora pueda entenderlo y ejecutarlo correctamente. Así como en un idioma se utilizan reglas gramaticales para formar oraciones, en un lenguaje de programación se utilizan reglas de sintaxis para formar instrucciones.
+Algunos conceptos básicos de la sintaxis de JavaScript son:
+
+#### Comentarios
+
+Los comentarios son texto que se utiliza para explicar el código y no se ejecutan. En JavaScript, los comentarios se pueden escribir de dos formas: con `//` para comentarios de una línea y con `/* */` para comentarios de varias líneas.
+
+```javascript
+// Este es un comentario de una línea
+
+/*
+Este es un comentario
+de varias líneas
+*/
+```
+
+#### Variables
+
+Las variables se utilizan para almacenar valores en un programa. En JavaScript, se pueden declarar variables con la palabra clave `let`, `const`, o `var`, seguida del nombre de la variable y el valor que se le asigna.
+
+```javascript
+let nombre = "Juan";
+const edad = 25;
+var altura = 1.75;
+```
+
+cosas a tener en cuenta:
+
+- let: se utiliza para declarar variables que pueden cambiar de valor. Es decir, se pueden reasignar o cambiar su valor en otro momento del programa.
+- const: se utiliza para declarar variables que no pueden cambiar de valor. Es decir, una vez que se asigna un valor a una variable constante, no se puede cambiar.
+- var: se utilizaba en versiones antiguas de JavaScript para declarar variables, pero en la actualidad se recomienda utilizar let y const en su lugar.
+- Estas palabras claves deben ser en minúsculas y no se pueden utilizar como nombres de variables.
+- Los nombre de las variables suelen ser en minúsculas, y si son compuestas, se separan con guiones bajos `_` o con notación camelCase. No pueden empezar con números, ni contener espacios, ni caracteres especiales, ni palabras reservadas (por ejemplo, let, const, var, function, etc.).
+- Las variables deben ser unicas, es decir, no se pueden declarar dos variables con el mismo nombre en el mismo ámbito o alcance (esto se verá más adelante).
+
+#### Tipos de datos
+
+Los tipos de datos en JavaScript se utilizan para representar diferentes tipos de valores, como números, cadenas de texto, booleanos, objetos, arreglos, y más. Algunos tipos de datos básicos en JavaScript son:
+
+```javascript
+let numero = 10; // Número entero
+let decimal = 3.14; // Número decimal
+let texto = "Hola"; // Cadena de texto
+let esVerdadero = true; // Valor booleano
+let persona = {nombre: "Juan", edad: 25}; // Objeto
+let colores = ["rojo", "verde", "azul"]; // Arreglo
+```
+
+cosas a tener en cuenta:
+
+- Los números en JavaScript pueden ser enteros o decimales.
+- Las cadenas de texto se escriben entre comillas simples o dobles.
+- Los valores booleanos pueden ser `true` o `false`.
+- Los objetos se utilizan para almacenar múltiples valores en una sola variable. Se definen con llaves `{}` y se acceden por clave, es decir, `persona.nombre` o `persona.edad`.
+- Los arreglos se utilizan para almacenar múltiples valores en una sola variable, y se acceden por índice. Se definen con corchetes `[]` y se acceden por posición, es decir, `colores[0]` o `colores[1]`.
+- JavaScript es un lenguaje de programación dinámico, lo que significa que no es necesario declarar explícitamente el tipo de dato de una variable. El tipo de dato se infiere automáticamente en función del valor asignado a la variable.
+- JavaScript es un lenguaje de programación débilmente tipado, lo que significa que las variables pueden cambiar de tipo durante la ejecución del programa. Por ejemplo, una variable que almacena un número entero puede cambiar a una cadena de texto en otro momento del programa.
+
+### Operadores básicos
+
+Los operadores en JavaScript se utilizan para realizar operaciones matemáticas, comparaciones, asignaciones, y más. Algunos operadores básicos en JavaScript son:
+
+#### Operadores aritméticos
+
+Se utilizan para realizar operaciones matemáticas, como suma, resta, multiplicación, división, y más.
+
+```javascript
+let suma = 10 + 5; // Suma
+let resta = 10 - 5; // Resta
+let multiplicacion = 10 * 5; // Multiplicación
+let division = 10 / 5; // División
+let modulo = 10 % 5; // Módulo
+```
+
+cosas a tener en cuenta:
+
+- El operador de suma `+` se puede utilizar para concatenar cadenas de texto.
+- El operador de módulo `%` devuelve el resto/residuo de la división entre dos números.
+- Los operadores aritméticos siguen las reglas de precedencia matemática, es decir, se evalúan en un orden específico. Por ejemplo, la multiplicación y la división tienen mayor precedencia que la suma y la resta.
+- Se pueden utilizar paréntesis `()` para cambiar el orden de evaluación de los operadores.
+- Los operadores aritméticos se pueden combinar con variables y valores para realizar cálculos.
+- Los operadores aritméticos se pueden utilizar con números enteros y decimales.
+- Los operadores aritmeticos se pueden utilizar para varios números, no solo dos, por ejemplo, `10 + 5 - 3`.
+
+#### Operadores de comparación
+
+Se utilizan para comparar dos valores y devolver un valor booleano `true` o `false`.
+
+```javascript
+let esIgual = 10 == 5; // Igual a (compara el valor) ¿10 es igual a 5?
+let esDiferente = 10 != 5; // Diferente de (compara el valor) ¿10 es diferente de 5?
+let esMayor = 10 > 5; // Mayor que (compara el valor) ¿10 es mayor que 5?
+let esMenor = 10 < 5; // Menor que (compara el valor) ¿10 es menor que 5?
+let esMayorIgual = 10 >= 5; // Mayor o igual que (compara el valor) ¿10 es mayor o igual que 5?
+let esMenorIgual = 10 <= 5; // Menor o igual que (compara el valor) ¿10 es menor o igual que 5?
+
+// texto
+let esIgualTexto = "hola" == "mundo"; // ¿"hola" es igual a "mundo"?
+
+// booleanos
+let esIgualBooleano = true == false; // ¿true es igual a false?
+```
+
+cosas a tener en cuenta:
+
+- El operador de igualdad `==` compara los valores de dos variables, pero no compara el tipo de dato. Por ejemplo, `10 == "10"` devuelve `true`.
+- El operador de desigualdad `!=` devuelve `true` si los valores de dos variables son diferentes.
+- Se pueden utilizar los operadores de comparación con números, cadenas de texto, booleanos, y más.
+
+#### Operadores lógicos
+
+Se utilizan para combinar dos o más expresiones lógicas y devolver un valor booleano `true` o `false`.
+
+```javascript
+let menor = 10 < 5 && 5 < 3; // Y lógico (AND) ¿10 es menor que 5 y 5 es menor que 3?
+let mayor = 10 > 5 || 5 < 3; // O lógico (OR) ¿10 es mayor que 5 o 5 es menor que 3?
+let y = true && false; // Y lógico (AND) ¿true y false?
+let o = true || false; // O lógico (OR) ¿true o false?
+let no = !true; // Negación lógica (NOT) ¿no true?
+```
+
+cosas a tener en cuenta:
+
+- El operador `&&` devuelve `true` si ambas expresiones son verdaderas.
+- El operador `||` devuelve `true` si al menos una de las expresiones es verdadera.
+- El operador `!` devuelve `true` si la expresión es falsa y `false` si la expresión es verdadera. Es decir, invierte el valor de la expresión.
+- Los operadores lógicos se pueden combinar con operadores de comparación para realizar operaciones más complejas. Por ejemplo, `10 > 5 && 5 < 3` devuelve `false`, porque la primera expresión es verdadera y la segunda es falsa, entonces como ambas deben ser verdaderas para que el `&&` devuelva `true`, entonces devuelve `false`.
+
+#### Operadores de asignación
+
+Se utilizan para asignar un valor a una variable.
+
+```javascript
+let x = 10; // Asignación simple
+let y = 5;
+y = y + 3; // Asignación de suma (y = y + 3)
+y += 3; // Asignación de suma (y = y + 3) Forma abreviada
+y = y - 3; // Asignación de resta (y = y - 3)
+y -= 3; // Asignación de resta (y = y - 3) Forma abreviada
+y *= 3; // Asignación de multiplicación (y = y * 3)
+y /= 3; // Asignación de división (y = y / 3)
+y %= 3; // Asignación de módulo (y = y % 3)
+```
+
+cosas a tener en cuenta:
+
+- Los operadores de asignación se pueden combinar con operadores aritméticos para realizar operaciones matemáticas y asignar el resultado a una variable.
+
+### Estructuras de control
+
+Las estructuras de control en JavaScript se utilizan para controlar el flujo de un programa y tomar decisiones en función de ciertas condiciones. En palabras simples, las estructuras de control permiten ejecutar ciertas instrucciones si se cumple una condición, o ejecutar otras instrucciones si no se cumple la condición. Algunas estructuras de control básicas en JavaScript son:
+
+#### Estructura `if`
+
+Se utiliza para ejecutar un bloque de código si se cumple una condición.
+
+```javascript
+let edad = 18;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+}
+```
+
+Esto significa que si la variable `edad` es mayor o igual a 18, se mostrará el mensaje "Eres mayor de edad" en la consola.
+
+cosas a tener en cuenta:
+
+- La condición se evalúa entre paréntesis `()`.
+- El bloque de código se encierra entre llaves `{}`.
+- Si la condición es verdadera, se ejecuta el bloque de código. Si la condición es falsa, no se ejecuta el bloque de código.
+- Se pueden utilizar operadores de comparación y operadores lógicos en la condición.
+- Se pueden anidar múltiples estructuras `if` para realizar múltiples comprobaciones.
+- Se puede utilizar la estructura `if` sin llaves si el bloque de código es una sola línea.
+
+#### Estructura `if-else`
+
+Se utiliza para ejecutar un bloque de código si se cumple una condición, y otro bloque de código si no se cumple la condición.
+
+```javascript
+let edad = 16;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+```
+
+Esto significa que si la variable `edad` es mayor o igual a 18, se mostrará el mensaje "Eres mayor de edad" en la consola, y si no se cumple la condición, se mostrará el mensaje "Eres menor de edad".
+
+#### Estructura `if-else if-else`
+
+Se utiliza para ejecutar un bloque de código si se cumple una condición, otro bloque de código si se cumple otra condición, y un tercer bloque de código si no se cumple ninguna de las condiciones anteriores.
+
+```javascript
+let hora = 14;
+
+if (hora < 12) {
+    console.log("Buenos días");
+} else if (hora < 18) {
+    console.log("Buenas tardes");
+} else {
+    console.log("Buenas noches");
+}
+```
+
+Esto significa que si la variable `hora` es menor a 12, se mostrará el mensaje "Buenos días" en la consola, si la variable `hora` es menor a 18, se mostrará el mensaje "Buenas tardes", y si no se cumple ninguna de las condiciones anteriores, se mostrará el mensaje "Buenas noches".
+
+cosas a tener en cuenta:
+
+- Se pueden utilizar múltiples bloques `else if` para realizar múltiples comprobaciones.
+- La estructura `if-else if-else` se evalúa de arriba hacia abajo, y se ejecuta el primer bloque de código cuya condición sea verdadera.
+- Se puede utilizar la estructura `if-else if-else` sin el bloque `else` si no se necesita un bloque de código para la condición que no se cumple.
+
+#### Estructura `switch`
+
+Se utiliza para ejecutar un bloque de código en función de una expresión.
+
+```javascript
+let dia = "lunes";
+
+switch (dia) {
+    case "lunes":
+        console.log("Hoy es lunes");
+        break;
+    case "martes":
+        console.log("Hoy es martes");
+        break;
+    case "miércoles":
+        console.log("Hoy es miércoles");
+        break;
+    default:
+        console.log("Hoy es otro día");
+}
+```
+
+Esto significa que si la variable `dia` es "lunes", se mostrará el mensaje "Hoy es lunes" en la consola, si la variable `dia` es "martes", se mostrará el mensaje "Hoy es martes", si la variable `dia` es "miércoles", se mostrará el mensaje "Hoy es miércoles", y si no se cumple ninguna de las condiciones anteriores, se mostrará el mensaje "Hoy es otro día".
+
+cosas a tener en cuenta:
+
+- La estructura `switch` se utiliza para comparar una expresión con múltiples casos y ejecutar un bloque de código en función del caso que se cumpla.
+- Se utiliza la palabra clave `case` para definir los casos y la palabra clave `break` para salir de la estructura `switch`.
+- Se puede utilizar la palabra clave `default` para definir un caso por defecto que se ejecuta si no se cumple ninguno de los casos anteriores.
+- La estructura `switch` es útil cuando se tienen múltiples casos que se pueden comparar con una sola expresión.
+- Se puede utilizar la estructura `switch` sin la palabra clave `default` si no se necesita un caso por defecto.
+- Es muy importante recordar el `break` al final de cada `case`, ya que si no se pone, se ejecutarán todos los `case` que estén debajo del `case` que se cumpla.
+- Es muy similar a `if-else if-else`, pero se utiliza cuando se tienen muchos casos que se pueden comparar con una sola expresión.
+
+#### Estructura `for`
+
+Se utiliza para ejecutar un bloque de código un número específico de veces.
+
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+```
+
+Esto significa que se mostrará en la consola los números del 0 al 4, ya que la variable `i` se inicializa en 0, se incrementa en 1 en cada iteración, y se ejecuta el bloque de código mientras `i` sea menor a 5.
+
+cosas a tener en cuenta:
+
+- La estructura `for` se compone de tres partes: la inicialización, la condición, y la actualización.
+- La inicialización se ejecuta una vez al principio del bucle y se utiliza para inicializar la variable de control.
+- La condición se evalúa antes de cada iteración y se utiliza para determinar si se ejecuta el bloque de código.
+- La actualización se ejecuta al final de cada iteración y se utiliza para actualizar la variable de control.
+- Se pueden utilizar múltiples variables en la inicialización, la condición, y la actualización.
+- Se pueden utilizar operadores aritméticos y lógicos en la condición.
+- Se puede utilizar la estructura `for` para recorrer arreglos, realizar cálculos, y más.
+
+#### Estructura `while`
+
+Se utiliza para ejecutar un bloque de código mientras se cumpla una condición.
+
+```javascript
+let i = 0;
+
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+```
+
+Esto significa que se mostrará en la consola los números del 0 al 4, ya que la variable `i` se inicializa en 0, se incrementa en 1 en cada iteración, y se ejecuta el bloque de código mientras `i` sea menor a 5.
+
+cosas a tener en cuenta:
+
+- La estructura `while` se compone de una condición y un bloque de código.
+- La condición se evalúa antes de cada iteración y se utiliza para determinar si se ejecuta el bloque de código.
+- El bloque de código se ejecuta mientras la condición sea verdadera.
+- Se pueden utilizar operadores aritméticos y lógicos en la condición.
+- Se puede utilizar la estructura `while` para realizar cálculos, interactuar con el usuario, y más.
+- Es muy importante tener cuidado con los bucles infinitos, es decir, bucles que nunca terminan, ya que pueden hacer que el programa se bloquee o se vuelva muy lento.
+- Es muy similar a `for`, pero se utiliza cuando no se sabe cuántas veces se va a ejecutar el bloque de código.
+
+#### Estructura `do-while`
+
+Se utiliza para ejecutar un bloque de código al menos una vez, y luego repetirlo mientras se cumpla una condición.
+
+```javascript
+let i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+```
+
+Esto significa que se mostrará en la consola los números del 0 al 4, ya que la variable `i` se inicializa en 0, se incrementa en 1 en cada iteración, se ejecuta el bloque de código al menos una vez, y se repite mientras `i` sea menor a 5.
+
+cosas a tener en cuenta:
+
+- La estructura `do-while` se compone de un bloque de código y una condición.
+- El bloque de código se ejecuta al menos una vez, y luego se repite mientras la condición sea verdadera.
+- La condición se evalúa al final de cada iteración, lo que garantiza que el bloque de código se ejecute al menos una vez.
+
+### Retos
+
+- Realizar un programa que muestre los números del 1 al 10 en la consola.
+- Realizar un programa que determine si un número es par o impar.
+- Realizar un programa que muestre los números pares del 1 al 10 en la consola.
+- Realizar un programa que muestre los números impares del 1 al 10 en la consola.
+- Realizar un programa que muestre los números del 10 al 1 en la consola.
+- Realizar un programa que muestre los números pares del 10 al 1 en la consola.
+- Realizar un programa que muestre los números impares del 10 al 1 en la consola.
+- Simular un mini cajero automatico que de un mensaje según el saldo del usuario, por ejemplo, si el saldo es mayor a 1000, mostrar "Saldo suficiente", si el saldo es menor a 1000 y mayor a 500, mostrar "Saldo insuficiente", si el saldo es menor a 500, mostrar "Saldo crítico".
+
+### Funciones
+
+Las funciones en JavaScript se utilizan para encapsular un bloque de código y reutilizarlo en diferentes partes de un programa. Una función puede aceptar parámetros, realizar operaciones, y devolver un valor si es necesario. Algunos conceptos básicos de las funciones en JavaScript son:
+
+#### Declaración de funciones
+
+Se utiliza para definir una función y especificar los parámetros y el bloque de código que se ejecuta cuando se llama a la función.
+
+```javascript
+function saludar() {
+    console.log("Hola, mundo");
+}
+
+saludar(); // Llama a la función saludar
+```
+
+Esto significa que al llamar a la función `saludar`, se mostrará el mensaje "Hola, mundo" en la consola.
+
+cosas a tener en cuenta:
+
+- La palabra clave `function` se utiliza para declarar una función.
+- El nombre de la función se utiliza para llamar a la función en otras partes del programa.
+- Los paréntesis `()` se utilizan para definir los parámetros de la función.
+- El bloque de código de la función se encierra entre llaves `{}`.
+- La función se ejecuta cuando se llama a la función con el nombre y los paréntesis.
+- Se pueden utilizar múltiples funciones en un programa para realizar diferentes tareas.
+- Las funciones se pueden llamar desde otras funciones, desde eventos, desde bucles, y más.
+- Las funciones deben ser unicas, es decir, no se pueden declarar dos funciones con el mismo nombre en el mismo ámbito o alcance (esto se verá más adelante).
+
+#### Parámetros de funciones
+
+Se utilizan para pasar valores a una función y realizar operaciones con esos valores.
+
+```javascript
+function sumar(a, b) {
+    let resultado = a + b;
+    console.log(resultado);
+}
+
+sumar(5, 3); // Llama a la función sumar con los valores 5 y 3
+sumar(10, 2); // Llama a la función sumar con los valores 10 y 2
+```
+
+Esto significa que al llamar a la función `sumar` con los valores 5 y 3, se mostrará el resultado de la suma en la consola, y al llamar a la función `sumar` con los valores 10 y 2, se mostrará el resultado de la suma en la consola.
+
+cosas a tener en cuenta:
+
+- Los parámetros se definen entre paréntesis `()` y se separan por comas `,`.
+- Los parámetros se utilizan para pasar valores a una función y realizar operaciones con esos valores.
+- Los parámetros se pueden utilizar en el bloque de código de la función como variables locales.
+- Se pueden utilizar múltiples parámetros en una función para realizar operaciones más complejas.
+- Los valores que se pasan a una función se llaman argumentos, es decir, se les dice parámetros cuando se define la función, y argumentos cuando se llama a la función.
+
+Acá se introdujo un nuevo termino que es "variables locales". Antes de esta sección, se habló de variables, que son como "cajas" (más adelante cambiará el concepto) que se utilizan para almacenar valores en un programa. Lo que sucedía es que esas variables se podían utilizar en cualquier parte del programa, es decir, eran "globales". Pero en este caso, las variables locales son variables que solo se pueden utilizar dentro de una función, es decir, solo son accesibles dentro de la función en la que se declaran. Esto es útil para evitar conflictos de nombres y mantener el código organizado. Por ejemplo, si se declara una variable `resultado` dentro de una función, solo se puede utilizar dentro de esa función, y no se puede acceder desde otras partes del programa. En la estructura `for` y `while` también se utilizan variables locales, ya que las variables de control solo se pueden utilizar dentro del bucle.
+
+#### Scope de variables
+
+El scope de una variable se refiere a la visibilidad y accesibilidad de la variable en un programa. En JavaScript, las variables pueden tener scope global o scope local, lo que significa que pueden ser accesibles desde cualquier parte del programa o solo desde una parte específica del programa.
+
+```javascript
+let global = "Variable global";
+
+function funcion() {
+    let local = "Variable local";
+    console.log(global); // Accede a la variable global
+    console.log(local); // Accede a la variable local
+}
+
+console.log(global); // Accede a la variable global
+console.log(local); // Error: la variable local no está definida
+```
+
+#### Retorno de funciones (return)
+
+Se utiliza para devolver un valor desde una función y utilizarlo en otras partes del programa. Por ejemplo, se puede utilizar una función para realizar un cálculo y devolver el resultado.
+
+```javascript
+function sumar(a, b) {
+    let resultado = a + b;
+    return resultado;
+}
+
+let total = sumar(5, 3); // Llama a la función sumar y guarda el resultado en la variable total
+console.log(total); // Muestra el resultado en la consola
+```
+
+Esto significa que al llamar a la función `sumar` con los valores 5 y 3, se devolverá el resultado de la suma, y se guardará en la variable `total`, que luego se mostrará en la consola.
+
+cosas a tener en cuenta:
+
+- La palabra clave `return` se utiliza para devolver un valor desde una función.
+- El valor devuelto por la función se puede guardar en una variable y utilizarlo en otras partes del programa.
+- Se puede utilizar `return` para devolver cualquier tipo de valor, como números, cadenas de texto, booleanos, objetos, arreglos, y más.
+
+#### Funciones flecha (arrow functions)
+
+Las funciones flecha son una forma más corta y concisa de definir funciones en JavaScript. Se utilizan para simplificar la sintaxis y reducir la cantidad de código necesario para definir una función.
+
+```javascript
+// Función tradicional
+function saludar() {
+    console.log("Hola, mundo");
+}
+
+// Función flecha
+let saludar = () => {
+    console.log("Hola, mundo");
+}
+
+saludar(); // Llama a la función saludar
+```
+
+Esto significa que al llamar a la función `saludar`, se mostrará el mensaje "Hola, mundo" en la consola.
+
+cosas a tener en cuenta:
+
+- Las funciones flecha se definen con la sintaxis `() => {}`.
+  
