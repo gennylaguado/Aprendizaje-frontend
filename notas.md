@@ -629,6 +629,8 @@ Usualmente la forma de trabajar con un repositorio es la siguiente:
 
 ![Descripción de la imagen](https://raw.githubusercontent.com/cat-milk/Anime-Girls-Holding-Programming-Books/master/Javascript/Maya_Yamato_Holding_Javascript_For_Absolute_Beginners.png)
 
+> Nota: He agregado muchos enlaces a videos, esto con el fin de encontrar una explicación más visual, pero sucede que a veces los videos muestran los conceptos en otros lenguajes de programación, pero esto es lo bonito de la programación, que los conceptos son casi siempre los mismos y solo cambia la sintaxis a usar.
+
 ### Introducción a JavaScript
 
 JavaScript es un lenguaje de programación que se utiliza para crear páginas web interactivas. Es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. JavaScript se ejecuta en el navegador web del usuario, lo que permite interactuar con los elementos de la página, realizar cálculos, enviar y recibir datos, y mucho más.
@@ -642,6 +644,11 @@ JavaScript es un lenguaje de programación que se utiliza para crear páginas we
 ### ¿Por qué JavaScript?
 
 JavaScript es uno de los lenguajes de programación más populares y ampliamente utilizados en el mundo. Es un lenguaje versátil que se puede utilizar para crear aplicaciones web, juegos, aplicaciones móviles, servidores, y mucho más. JavaScript es un lenguaje de programación esencial para cualquier desarrollador web, ya que permite crear páginas web interactivas y dinámicas.
+
+#### Recomendaciones
+
+- [¿Qué es la programación](https://www.youtube.com/watch?v=a7eznAouNak&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=1)
+- [JavaScript en 5 minutos](https://youtu.be/FuCiNVP88pc?si=y3s5ILbUW8uf2bDq)
 
 ### Uso de la consola del navegador
 
@@ -690,6 +697,10 @@ cosas a tener en cuenta:
 - Los nombre de las variables suelen ser en minúsculas, y si son compuestas, se separan con guiones bajos `_` o con notación camelCase. No pueden empezar con números, ni contener espacios, ni caracteres especiales, ni palabras reservadas (por ejemplo, let, const, var, function, etc.).
 - Las variables deben ser unicas, es decir, no se pueden declarar dos variables con el mismo nombre en el mismo ámbito o alcance (esto se verá más adelante).
 
+#### Recomendaciones
+
+- [¿Qué es una variable?](https://www.youtube.com/watch?v=kZfuJvkdcHU&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=2)
+
 #### Tipos de datos
 
 Los tipos de datos en JavaScript se utilizan para representar diferentes tipos de valores, como números, cadenas de texto, booleanos, objetos, arreglos, y más. Algunos tipos de datos básicos en JavaScript son:
@@ -712,6 +723,11 @@ cosas a tener en cuenta:
 - Los arreglos se utilizan para almacenar múltiples valores en una sola variable, y se acceden por índice. Se definen con corchetes `[]` y se acceden por posición, es decir, `colores[0]` o `colores[1]`.
 - JavaScript es un lenguaje de programación dinámico, lo que significa que no es necesario declarar explícitamente el tipo de dato de una variable. El tipo de dato se infiere automáticamente en función del valor asignado a la variable.
 - JavaScript es un lenguaje de programación débilmente tipado, lo que significa que las variables pueden cambiar de tipo durante la ejecución del programa. Por ejemplo, una variable que almacena un número entero puede cambiar a una cadena de texto en otro momento del programa.
+
+#### Recomendaciones
+
+- [Entender un array o arreglo, el de los []](https://www.youtube.com/watch?v=k24J92Hod50)
+- [Otra explicación de los array o arreglos](https://www.youtube.com/watch?v=_FsRvYZNbnc&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=7)
 
 ### Operadores básicos
 
@@ -802,6 +818,10 @@ y %= 3; // Asignación de módulo (y = y % 3)
 cosas a tener en cuenta:
 
 - Los operadores de asignación se pueden combinar con operadores aritméticos para realizar operaciones matemáticas y asignar el resultado a una variable.
+
+#### Recomendaciones
+
+- [¿Qué son los condicionales?](https://www.youtube.com/watch?v=RaWfeVgkWbE&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=3)
 
 ### Estructuras de control
 
@@ -904,6 +924,11 @@ cosas a tener en cuenta:
 - Es muy importante recordar el `break` al final de cada `case`, ya que si no se pone, se ejecutarán todos los `case` que estén debajo del `case` que se cumpla.
 - Es muy similar a `if-else if-else`, pero se utiliza cuando se tienen muchos casos que se pueden comparar con una sola expresión.
 
+#### Recomendaciones
+
+- [Explicación del switch](https://www.youtube.com/watch?v=zPKylS8ifuI)
+- [Otra explicación del switch](https://www.youtube.com/watch?v=Cywj2rx2AMc&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=4)
+
 #### Estructura `for`
 
 Se utiliza para ejecutar un bloque de código un número específico de veces.
@@ -925,6 +950,11 @@ cosas a tener en cuenta:
 - Se pueden utilizar múltiples variables en la inicialización, la condición, y la actualización.
 - Se pueden utilizar operadores aritméticos y lógicos en la condición.
 - Se puede utilizar la estructura `for` para recorrer arreglos, realizar cálculos, y más.
+
+#### Recomendaciones
+
+- [Explicación de for](https://www.youtube.com/watch?v=7bO5wlqeeEI&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=6)
+- [Otra explicación de for](https://www.youtube.com/watch?v=ywIVQBaPRYk)
 
 #### Estructura `while`
 
@@ -950,6 +980,11 @@ cosas a tener en cuenta:
 - Se puede utilizar la estructura `while` para realizar cálculos, interactuar con el usuario, y más.
 - Es muy importante tener cuidado con los bucles infinitos, es decir, bucles que nunca terminan, ya que pueden hacer que el programa se bloquee o se vuelva muy lento.
 - Es muy similar a `for`, pero se utiliza cuando no se sabe cuántas veces se va a ejecutar el bloque de código.
+
+#### Recomendaciones
+
+- [Explicación de while](https://www.youtube.com/watch?v=cuFSVjo9oi0)
+- [Otra explicación de while](https://www.youtube.com/watch?v=0h_srypSheg&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=5)
 
 #### Estructura `do-while`
 
@@ -982,6 +1017,10 @@ cosas a tener en cuenta:
 - Realizar un programa que muestre los números pares del 10 al 1 en la consola.
 - Realizar un programa que muestre los números impares del 10 al 1 en la consola.
 - Simular un mini cajero automatico que de un mensaje según el saldo del usuario, por ejemplo, si el saldo es mayor a 1000, mostrar "Saldo suficiente", si el saldo es menor a 1000 y mayor a 500, mostrar "Saldo insuficiente", si el saldo es menor a 500, mostrar "Saldo crítico".
+
+#### Recomendaciones
+
+- [JavaScript en 4 minutos](https://www.youtube.com/watch?v=HyAoI3gxoLI) Este video quiero lo vea y ya, no le pido que lo entienda del todo, ya que hay conceptos que no he explicado, pero es para que se vaya familiarizando con el lenguaje, no hay excusa.
 
 ### Funciones
 
@@ -1037,6 +1076,12 @@ cosas a tener en cuenta:
 - Los valores que se pasan a una función se llaman argumentos, es decir, se les dice parámetros cuando se define la función, y argumentos cuando se llama a la función.
 
 Acá se introdujo un nuevo termino que es "variables locales". Antes de esta sección, se habló de variables, que son como "cajas" (más adelante cambiará el concepto) que se utilizan para almacenar valores en un programa. Lo que sucedía es que esas variables se podían utilizar en cualquier parte del programa, es decir, eran "globales". Pero en este caso, las variables locales son variables que solo se pueden utilizar dentro de una función, es decir, solo son accesibles dentro de la función en la que se declaran. Esto es útil para evitar conflictos de nombres y mantener el código organizado. Por ejemplo, si se declara una variable `resultado` dentro de una función, solo se puede utilizar dentro de esa función, y no se puede acceder desde otras partes del programa. En la estructura `for` y `while` también se utilizan variables locales, ya que las variables de control solo se pueden utilizar dentro del bucle.
+
+#### Recomendaciones
+
+- [Otra explicación de funciones](https://www.youtube.com/watch?v=AzeyTH_AjFE)
+- [¿Qué es una función?](https://www.youtube.com/watch?v=XCHKaSNjoak&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=9)
+- [Otra explicación de funciones](https://www.youtube.com/watch?v=MiH3pbP4EFc)
 
 #### Scope de variables
 
@@ -1101,3 +1146,6 @@ cosas a tener en cuenta:
 
 - Las funciones flecha se definen con la sintaxis `() => {}`.
   
+#### Recomendaciones
+
+- [Explicación arrow function](https://www.youtube.com/watch?v=HVEkbCZAuqA)
