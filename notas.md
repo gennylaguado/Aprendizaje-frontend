@@ -813,6 +813,9 @@ y -= 3; // Asignación de resta (y = y - 3) Forma abreviada
 y *= 3; // Asignación de multiplicación (y = y * 3)
 y /= 3; // Asignación de división (y = y / 3)
 y %= 3; // Asignación de módulo (y = y % 3)
+y = y + 1; // Asignación de sumar uno
+y++; // Asignación de sumar uno
+
 ```
 
 cosas a tener en cuenta:
@@ -1010,17 +1013,86 @@ cosas a tener en cuenta:
 ### Retos
 
 - Realizar un programa que muestre los números del 1 al 10 en la consola.
+
+```javascript 
+let number = 1;
+
+while (numero <= 10) {
+  console.log(numero);
+  numero++;
+}
+```
 - Realizar un programa que determine si un número es par o impar.
+
+```javascript	
+let numero = 3;
+let modulo = numero % 2; // Para saber si es par
+console.log(numero);
+if (modulo == 0) {
+  console.log("Es par");
+} else {
+  console.log("Es impar");
+}
+```
+
 - Realizar un programa que muestre los números pares del 1 al 10 en la consola.
+
+```javascript
+for (let index = 1; index <= 10; index++) {
+  let modulo = index % 2;
+  if (modulo == 0) {
+    console.log(index);
+  } 
+}
+```
+
 - Realizar un programa que muestre los números impares del 1 al 10 en la consola.
+
+```javascript
+for (let index = 1; index <= 10; index++) {
+  let modulo = index % 2;
+  if (modulo != 0) {
+    console.log(index);
+  } 
+}
+```
+
 - Realizar un programa que muestre los números del 10 al 1 en la consola.
+
+```javascript
+for (let index = 10; index >= 1; index--) {
+  console.log(index);
+}
+```
+
 - Realizar un programa que muestre los números pares del 10 al 1 en la consola.
+- 
+```javascript
+for (let index = 10; index >= 1; index--) {
+  if (index % 2 == 0) {
+    console.log(index);
+  } 
+}
+```
+
 - Realizar un programa que muestre los números impares del 10 al 1 en la consola.
 - Simular un mini cajero automatico que de un mensaje según el saldo del usuario, por ejemplo, si el saldo es mayor a 1000, mostrar "Saldo suficiente", si el saldo es menor a 1000 y mayor a 500, mostrar "Saldo insuficiente", si el saldo es menor a 500, mostrar "Saldo crítico".
 
 #### Recomendaciones
 
 - [JavaScript en 4 minutos](https://www.youtube.com/watch?v=HyAoI3gxoLI) Este video quiero lo vea y ya, no le pido que lo entienda del todo, ya que hay conceptos que no he explicado, pero es para que se vaya familiarizando con el lenguaje, no hay excusa.
+
+```javascript
+let saldo = 1000
+
+if (saldo > 1000) {
+  console.log("Saldo suficiente")
+} else if (Saldo>500) {
+    console.log("Saldo insuficiente")
+} else {
+    console.log("Saldo crítico")
+}
+```
 
 ### Funciones
 
