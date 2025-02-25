@@ -665,7 +665,7 @@ Para escribir código JavaScript, se puede abrir la consola del navegador y escr
 La sintaxis de un lenguaje de programación se refiere a las reglas y estructuras que se utilizan para escribir código. Es decir, el texto que se escribe en un lenguaje de programación debe seguir ciertas reglas para que la computadora pueda entenderlo y ejecutarlo correctamente. Así como en un idioma se utilizan reglas gramaticales para formar oraciones, en un lenguaje de programación se utilizan reglas de sintaxis para formar instrucciones.
 Algunos conceptos básicos de la sintaxis de JavaScript son:
 
-#### Comentarios
+### Comentarios
 
 Los comentarios son texto que se utiliza para explicar el código y no se ejecutan. En JavaScript, los comentarios se pueden escribir de dos formas: con `//` para comentarios de una línea y con `/* */` para comentarios de varias líneas.
 
@@ -678,7 +678,7 @@ de varias líneas
 */
 ```
 
-#### Variables
+### Variables
 
 Las variables se utilizan para almacenar valores en un programa. En JavaScript, se pueden declarar variables con la palabra clave `let`, `const`, o `var`, seguida del nombre de la variable y el valor que se le asigna.
 
@@ -701,7 +701,7 @@ cosas a tener en cuenta:
 
 - [¿Qué es una variable?](https://www.youtube.com/watch?v=kZfuJvkdcHU&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=2)
 
-#### Tipos de datos
+### Tipos de datos
 
 Los tipos de datos en JavaScript se utilizan para representar diferentes tipos de valores, como números, cadenas de texto, booleanos, objetos, arreglos, y más. Algunos tipos de datos básicos en JavaScript son:
 
@@ -822,7 +822,7 @@ cosas a tener en cuenta:
 
 - Los operadores de asignación se pueden combinar con operadores aritméticos para realizar operaciones matemáticas y asignar el resultado a una variable.
 
-#### Recomendaciones
+##### Recomendaciones
 
 - [¿Qué son los condicionales?](https://www.youtube.com/watch?v=RaWfeVgkWbE&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=3)
 
@@ -927,7 +927,7 @@ cosas a tener en cuenta:
 - Es muy importante recordar el `break` al final de cada `case`, ya que si no se pone, se ejecutarán todos los `case` que estén debajo del `case` que se cumpla.
 - Es muy similar a `if-else if-else`, pero se utiliza cuando se tienen muchos casos que se pueden comparar con una sola expresión.
 
-#### Recomendaciones
+##### Recomendaciones
 
 - [Explicación del switch](https://www.youtube.com/watch?v=zPKylS8ifuI)
 - [Otra explicación del switch](https://www.youtube.com/watch?v=Cywj2rx2AMc&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=4)
@@ -954,7 +954,7 @@ cosas a tener en cuenta:
 - Se pueden utilizar operadores aritméticos y lógicos en la condición.
 - Se puede utilizar la estructura `for` para recorrer arreglos, realizar cálculos, y más.
 
-#### Recomendaciones
+##### Recomendaciones
 
 - [Explicación de for](https://www.youtube.com/watch?v=7bO5wlqeeEI&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=6)
 - [Otra explicación de for](https://www.youtube.com/watch?v=ywIVQBaPRYk)
@@ -984,7 +984,7 @@ cosas a tener en cuenta:
 - Es muy importante tener cuidado con los bucles infinitos, es decir, bucles que nunca terminan, ya que pueden hacer que el programa se bloquee o se vuelva muy lento.
 - Es muy similar a `for`, pero se utiliza cuando no se sabe cuántas veces se va a ejecutar el bloque de código.
 
-#### Recomendaciones
+##### Recomendaciones
 
 - [Explicación de while](https://www.youtube.com/watch?v=cuFSVjo9oi0)
 - [Otra explicación de while](https://www.youtube.com/watch?v=0h_srypSheg&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=5)
@@ -1096,7 +1096,11 @@ if (saldo > 1000) {
 
 ### Funciones
 
-Las funciones en JavaScript se utilizan para encapsular un bloque de código y reutilizarlo en diferentes partes de un programa. Una función puede aceptar parámetros, realizar operaciones, y devolver un valor si es necesario. Algunos conceptos básicos de las funciones en JavaScript son:
+Las funciones en JavaScript se utilizan para encapsular un bloque de código y reutilizarlo en diferentes partes de un programa. Una función puede aceptar parámetros, realizar operaciones, y devolver un valor si es necesario.
+
+Las funciones son muy importantes en un lengua de programación, ya que permiten dividir un programa en partes más pequeñas y fáciles de entender, reutilizar código, y realizar tareas específicas.
+
+Algunos conceptos básicos de las funciones en JavaScript son:
 
 #### Declaración de funciones
 
@@ -1109,6 +1113,8 @@ function saludar() {
 
 saludar(); // Llama a la función saludar
 ```
+
+Notemos la palabra reservada `function`, que se utiliza para declarar una función, y el nombre de la función `saludar`, que se utiliza para llamar a la función en otras partes del programa. El bloque de código de la función se encierra entre llaves `{}`. En este caso, el bloque de código de la función `saludar` es `console.log("Hola, mundo")`, que se ejecuta cuando se llama a la función `saludar`.
 
 Esto significa que al llamar a la función `saludar`, se mostrará el mensaje "Hola, mundo" en la consola.
 
@@ -1125,7 +1131,7 @@ cosas a tener en cuenta:
 
 #### Parámetros de funciones
 
-Se utilizan para pasar valores a una función y realizar operaciones con esos valores.
+Ahora surge la pregunta, ¿Como hago para que la función `saludar` salude a una persona en específico? Para eso se utilizan los parámetros. Los parámetros se utilizan para pasar valores a una función y realizar operaciones con esos valores.
 
 ```javascript
 function sumar(a, b) {
@@ -1135,6 +1141,15 @@ function sumar(a, b) {
 
 sumar(5, 3); // Llama a la función sumar con los valores 5 y 3
 sumar(10, 2); // Llama a la función sumar con los valores 10 y 2
+
+// otro ejemplo con saludar
+
+function saludar(nombre) {
+    console.log("Hola, " + nombre);
+}
+
+saludar("Juan"); // Llama a la función saludar con el valor "Juan"
+saludar("Genny"); // Llama a la función saludar con el valor "Genny"
 ```
 
 Esto significa que al llamar a la función `sumar` con los valores 5 y 3, se mostrará el resultado de la suma en la consola, y al llamar a la función `sumar` con los valores 10 y 2, se mostrará el resultado de la suma en la consola.
@@ -1145,11 +1160,11 @@ cosas a tener en cuenta:
 - Los parámetros se utilizan para pasar valores a una función y realizar operaciones con esos valores.
 - Los parámetros se pueden utilizar en el bloque de código de la función como variables locales.
 - Se pueden utilizar múltiples parámetros en una función para realizar operaciones más complejas.
-- Los valores que se pasan a una función se llaman argumentos, es decir, se les dice parámetros cuando se define la función, y argumentos cuando se llama a la función.
+- Los valores que se pasan a una función se llaman argumentos, es decir, se les dice parámetros cuando se define la función, y argumentos cuando se llama a la función. En los ejemplos, `a`, `b` y `nombre` son parámetros, y `5`, `3`, `10`, `2`, `Juan` y `Genny` son argumentos.
 
 Acá se introdujo un nuevo termino que es "variables locales". Antes de esta sección, se habló de variables, que son como "cajas" (más adelante cambiará el concepto) que se utilizan para almacenar valores en un programa. Lo que sucedía es que esas variables se podían utilizar en cualquier parte del programa, es decir, eran "globales". Pero en este caso, las variables locales son variables que solo se pueden utilizar dentro de una función, es decir, solo son accesibles dentro de la función en la que se declaran. Esto es útil para evitar conflictos de nombres y mantener el código organizado. Por ejemplo, si se declara una variable `resultado` dentro de una función, solo se puede utilizar dentro de esa función, y no se puede acceder desde otras partes del programa. En la estructura `for` y `while` también se utilizan variables locales, ya que las variables de control solo se pueden utilizar dentro del bucle.
 
-#### Recomendaciones
+##### Recomendaciones
 
 - [Otra explicación de funciones](https://www.youtube.com/watch?v=AzeyTH_AjFE)
 - [¿Qué es una función?](https://www.youtube.com/watch?v=XCHKaSNjoak&list=PLPmRzmMDGerWEzjT0Vqy8D-IixKMY_6N6&index=9)
@@ -1172,9 +1187,15 @@ console.log(global); // Accede a la variable global
 console.log(local); // Error: la variable local no está definida
 ```
 
+Esto es mucho lo que hablamos de imaginar como cajas dentro de cajas, es decir, si una caja está dentro de otra, la caja de afuera no puede acceder a la caja de adentro, pero la caja de adentro si puede acceder a la caja de afuera. En este caso, la variable `global` es una variable global, es decir, se puede acceder desde cualquier parte del programa, y la variable `local` es una variable local, es decir, solo se puede acceder desde la función en la que se declara.
+
+El scope no solo se limita a funciones, realmente podemos imaginar como el alcance de una variable es dentro de un bloque de código, y podemos asumir los limites de ese bloque de código como las llaves `{}`.
+
 #### Retorno de funciones (return)
 
 Se utiliza para devolver un valor desde una función y utilizarlo en otras partes del programa. Por ejemplo, se puede utilizar una función para realizar un cálculo y devolver el resultado.
+
+Anteriormente habiamos visto el ejemplo de la función `sumar`, que recibe numeros e imprime el valor, pero ahora vamos a modificarla para que devuelva el resultado en lugar de mostrarlo en la consola, ya que puede ser útil para utilizarlo en otras partes del programa y queremos que la función se encargue de realizar el calculo y devolver el resultado.
 
 ```javascript
 function sumar(a, b) {
@@ -1190,7 +1211,7 @@ Esto significa que al llamar a la función `sumar` con los valores 5 y 3, se dev
 
 cosas a tener en cuenta:
 
-- La palabra clave `return` se utiliza para devolver un valor desde una función.
+- La palabra reservada `return` se utiliza para devolver un valor desde una función.
 - El valor devuelto por la función se puede guardar en una variable y utilizarlo en otras partes del programa.
 - Se puede utilizar `return` para devolver cualquier tipo de valor, como números, cadenas de texto, booleanos, objetos, arreglos, y más.
 
@@ -1218,6 +1239,353 @@ cosas a tener en cuenta:
 
 - Las funciones flecha se definen con la sintaxis `() => {}`.
   
-#### Recomendaciones
+##### Recomendaciones
 
 - [Explicación arrow function](https://www.youtube.com/watch?v=HVEkbCZAuqA)
+
+### Retos
+
+- Realizar un programa que simule una calculadora con las operaciones básicas (suma, resta, multiplicación, división) y devuelva el resultado. Es decir, se recibe dos números y la operación a realizar, y se devuelve el resultado.
+- Realizar un programa que reciba un número y devuelva si es par o impar.
+- Realizar un programa que reciba un número y devuelva si es positivo, negativo o cero.
+- Realizar un programa que reciba un número y devuelva su factorial.
+- Realizar un programa que reciba un número y devuelva su tabla de multiplicar hasta el 10.
+- Realizar un programa que reciba un número y devuelva su tabla de multiplicar hasta el un número específico.
+
+## Arrays / Arreglos
+
+Entramos a uno de los tipos de datos más usados en muchos lenguajes de programación, los arreglos. Los arreglos se utilizan para almacenar múltiples valores en una sola variable. En JavaScript, los arreglos se definen con corchetes `[]` y los valores se separan por comas `,`.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+console.log(colores); // Imprimir el arreglo completo
+```
+
+Esto significa que el arreglo `colores` contiene los valores `"rojo"`, `"verde"` y `"azul"`. Al imprimir el arreglo completo, se mostrarán los valores en la consola.
+
+cosas a tener en cuenta:
+
+- Los arreglos se definen con corchetes `[]`.
+- Los valores del arreglo se separan por comas `,`.
+- Los valores del arreglo pueden ser números, cadenas de texto, booleanos, objetos, arreglos, y más.
+- Los valores del arreglo se pueden acceder por posición, es decir, por índice.
+- Los índices de los arreglos empiezan en 0, es decir, el primer elemento tiene índice 0, el segundo elemento tiene índice 1, y así sucesivamente.
+
+#### Acceder a elementos
+
+Se utiliza para acceder a un elemento específico de un arreglo por posición.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+console.log(colores[0]); // Acceder al primer elemento del arreglo
+
+console.log(colores[1]); // Acceder al segundo elemento del arreglo
+
+console.log(colores[2]); // Acceder al tercer elemento del arreglo
+```
+
+Esto significa que al acceder al elemento `colores[0]`, se mostrará el valor `"rojo"` en la consola, al acceder al elemento `colores[1]`, se mostrará el valor `"verde"`, y al acceder al elemento `colores[2]`, se mostrará el valor `"azul"`. Si notas, es un número lo que va dentro para el indice, entonces si quisieras recorrer (pasar por todos los elementos) ya sea para primir o quizás para hacer una operación como sumarle 1 a cada elemento, se puede hacer con un bucle (for, while, do-while).
+
+#### Modificar elementos
+
+Se utiliza para modificar un elemento específico de un arreglo por posición. Esto es normal en la programación, ya que a veces se necesita cambiar un valor específico de un arreglo o puede ser que se necesite cambiar un valor en un arreglo en función de una condición.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+console.log(colores); // Imprimir el arreglo completo
+
+colores[1] = "amarillo"; // Modificar el segundo elemento del arreglo
+
+console.log(colores); // Imprimir el arreglo completo
+```
+
+Esto significa que al modificar el elemento `colores[1]` con el valor `"amarillo"`, se cambiará el valor del segundo elemento del arreglo, y al imprimir el arreglo completo, se mostrará el nuevo valor en la consola. Entonces notaremos que en el primer console debemos ver el arreglo con los valores `"rojo"`, `"verde"`, `"azul"`, y en el segundo console debemos ver el arreglo con los valores `"rojo"`, `"amarillo"`, `"azul"`.
+
+#### Longitud de un arreglo
+
+Se utiliza para obtener la cantidad de elementos de un arreglo. Podemos preguntarnos para que sirve esto, y la respuesta es que a veces se necesita saber cuántos elementos tiene un arreglo para realizar operaciones, como recorrer el arreglo, sumar los elementos, encontrar el valor máximo, y más.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+console.log(colores.length); // Obtener la longitud del arreglo = 3
+```
+
+Esto significa que al obtener la longitud del arreglo `colores`, se mostrará la cantidad de elementos del arreglo en la consola. En este caso, el arreglo `colores` tiene 3 elementos, por lo que la longitud del arreglo es 3.
+
+#### Recorrer un arreglo
+
+Se utiliza para recorrer todos los elementos de un arreglo y realizar operaciones con cada elemento. Esto es muy útil cuando se necesita realizar una operación con cada elemento del arreglo, como imprimirlos, sumarlos, encontrar el valor máximo, y más.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+for (let i = 0; i < colores.length; i++) {
+    console.log(colores[i]); // Imprimir cada elemento del arreglo
+}
+```
+
+Esto significa que al recorrer el arreglo `colores` con un bucle `for`, se imprimirá cada elemento del arreglo en la consola. En este caso, se imprimirán los valores `"rojo"`, `"verde"` y `"azul"`.
+
+cosas a tener en cuenta:
+
+- Se utiliza un bucle `for` para recorrer el arreglo.
+- La variable `i` se utiliza como índice para acceder a cada elemento del arreglo.
+- La condición `i < colores.length` se utiliza para determinar cuántas veces se ejecuta el bucle.
+- La expresión `colores[i]` se utiliza para acceder a cada elemento del arreglo por posición.
+- Se puede utilizar el bucle `for` para realizar operaciones con cada elemento del arreglo, como imprimirlos, sumarlos, encontrar el valor máximo, y más.
+
+Otro ejemplo de recorrer un arreglo, pero en este caso, se quiere sumar todos los elementos del arreglo para obtener el total, digamos puede ser un arreglo que simula almacenar los precios de los productos de alguna lista de compra y se quiere obtener el total de la compra.
+
+```javascript
+let precios = [100, 200, 300];
+
+let total = 0; // Inicializar el total en 0 porque se va a sumar y se necesita un valor inicial.
+
+for (let i = 0; i < precios.length; i++) {
+    total += precios[i]; // Sumar cada elemento del arreglo al total
+}
+
+console.log(total); // Imprimir el total de la compra
+```
+
+Esto significa que al recorrer el arreglo `precios` con un bucle `for`, se sumarán todos los elementos del arreglo para obtener el total de la compra, y se mostrará el total en la consola. En este caso, el total de la compra es 600, ya que se sumaron los valores 100, 200 y 300. Esto funciona en un total de 3 ciclos, en el primer ciclo el total es 0 y se le suma el primer elemento del arreglo que es 100, teniendo un total de 100, pero todavia falta 2 ciclos más, en el segundo ciclo la variable total es 100 y se le suma el segundo elemento del arreglo que es 200, teniendo un total de 300, pero todavia falta 1 ciclo más, en el tercer ciclo el total es 300 y se le suma el tercer elemento del arreglo que es 300, teniendo un total de 600.
+
+### Retos
+
+- Realizar un programa que reciba un arreglo de números y devuelva la suma de todos los elementos.
+- Realizar un programa que reciba un arreglo de números y devuelva el promedio de todos los elementos.
+- Realizar un programa que reciba un arreglo de números y devuelva el valor máximo.
+- Realizar un programa que reciba un arreglo de números y devuelva el valor mínimo.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos al cuadrado.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos al cubo.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos al cuadrado si son pares y al cubo si son impares.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos ordenados de menor a mayor.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos ordenados de mayor a menor.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos únicos, es decir, sin elementos repetidos.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos que se repiten.
+- Realizar un programa que reciba un arreglo de números y devuelva un nuevo arreglo con los elementos que no se repiten.
+
+### Objetos
+
+Entramos a otro tipo de dato muy importante en JavaScript, los objetos. Los objetos se utilizan para almacenar múltiples valores en una sola variable, pero a diferencia de los arreglos, los objetos almacenan los valores en pares de clave-valor. En JavaScript, los objetos se definen con llaves `{}` y los pares de clave-valor se separan por comas `,`. ¿Que podemos tener en el mundo real como un objeto clave-valor? Pues un ejemplo muy claro es un diccionario, donde la clave es la palabra y el valor es la definición de la palabra. Entonces imaginemos que el diccionario sea algo electronico donde nosotros le mandamos una palabra y nos devuelve la definición de la palabra.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+console.log(persona); // Imprimir el objeto completo
+```
+
+Esto significa que el objeto `persona` contiene los pares de clave-valor `nombre: "Juan"`, `edad: 30` y `casado: false`. Al imprimir el objeto completo, se mostrarán los pares de clave-valor en la consola. Como puede notar, un objeto nos ayuda a organizar-agrupar información, en este caso, la información de una persona.
+
+cosas a tener en cuenta:
+
+- Los objetos se definen con llaves `{}`.
+- Los pares de clave-valor se separan por comas `,`.
+- Las claves se utilizan para acceder a los valores del objeto.
+- Los valores del objeto pueden ser números, cadenas de texto, booleanos, objetos, arreglos, y más.
+
+#### Acceder a propiedades
+
+Se utiliza para acceder a un valor específico de un objeto por clave. Esto es muy útil cuando se necesita obtener un valor específico de un objeto para realizar operaciones, como imprimirlo, modificarlo, eliminarlo, y más.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+console.log(persona.nombre); // Acceder a la propiedad nombre del objeto
+
+console.log(persona.edad); // Acceder a la propiedad edad del objeto
+
+console.log(persona.casado); // Acceder a la propiedad casado del objeto
+```
+
+Esto significa que al acceder a la propiedad `nombre` del objeto `persona`, se mostrará el valor `"Juan"` en la consola, al acceder a la propiedad `edad`, se mostrará el valor `30`, y al acceder a la propiedad `casado`, se mostrará el valor `false`.
+
+#### Modificar propiedades
+
+Se utiliza para modificar un valor específico de un objeto por clave. Esto es normal en la programación, ya que a veces se necesita cambiar un valor específico de un objeto o puede ser que se necesite cambiar un valor en un objeto en función de una condición.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+console.log(persona); // Imprimir el objeto completo
+
+persona.edad = 35; // Modificar la propiedad edad del objeto
+
+console.log(persona); // Imprimir el objeto completo
+```
+
+Esto significa que al modificar la propiedad `edad` del objeto `persona` con el valor `35`, se cambiará el valor de la propiedad `edad` del objeto, y al imprimir el objeto completo, se mostrará el nuevo valor en la consola. Entonces notaremos que en el primer console debemos ver el objeto con las propiedades `nombre: "Juan"`, `edad: 30`, `casado: false`, y en el segundo console debemos ver el objeto con las propiedades `nombre: "Juan"`, `edad: 35`, `casado: false`.
+
+#### Añadir propiedades
+
+¿Que pasa si necesitamos añadir una propiedad a un objeto? Pues se puede hacer, y es muy útil cuando se necesita almacenar información adicional en un objeto o cuando se necesita añadir una propiedad en función de una condición.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+console.log(persona); // Imprimir el objeto completo
+
+persona.altura = 1.75; // Añadir la propiedad altura al objeto
+
+console.log(persona); // Imprimir el objeto completo
+```
+
+Esto significa que al añadir la propiedad `altura` al objeto `persona` con el valor `1.75`, se añadirá la propiedad `altura` al objeto, y al imprimir el objeto completo, se mostrará la nueva propiedad en la consola. Entonces notaremos que en el primer console debemos ver el objeto con las propiedades `nombre: "Juan"`, `edad: 30`, `casado: false`, y en el segundo console debemos ver el objeto con las propiedades `nombre: "Juan"`, `edad: 30`, `casado: false`, `altura: 1.75`.
+
+#### Eliminar propiedades
+
+Se utiliza para eliminar una propiedad específica de un objeto por clave. Esto es muy útil cuando se necesita eliminar una propiedad de un objeto o cuando se necesita eliminar una propiedad en función de una condición. Después de eliminar una propiedad, ya no se puede acceder a ella.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+console.log(persona); // Imprimir el objeto completo
+
+delete persona.edad; // Eliminar la propiedad edad del objeto
+
+console.log(persona); // Imprimir el objeto completo
+
+console.log(persona.edad); // Error: la propiedad edad no está definida
+```
+
+Esto significa que al eliminar la propiedad `edad` del objeto `persona`, se eliminará la propiedad `edad` del objeto, y al imprimir el objeto completo, ya no se mostrará la propiedad `edad` en la consola. Entonces notaremos que en el primer console debemos ver el objeto con las propiedades `nombre: "Juan"`, `edad: 30`, `casado: false`, y en el segundo console debemos ver el objeto con las propiedades `nombre: "Juan"`, `casado: false`, y en el tercer console debemos ver un error que dice que la propiedad `edad` no está definida.
+
+#### Recorrer un objeto
+
+¿Podemos recorrer un objeto, y que sentido tiene recorrer un objeto? Pues si, se puede recorrer un objeto, y tiene sentido cuando se necesita realizar una operación con cada propiedad del objeto, como imprimirlas, modificarlas, eliminarlas, y más.
+
+```javascript
+let persona = {
+    nombre: "Juan",
+    edad: 30,
+    casado: false
+};
+
+for (let propiedad in persona) {
+    console.log(propiedad + ": " + persona[propiedad]); // Imprimir cada propiedad del objeto
+}
+```
+
+> Nota: Observa el for, es un for...in, un for que no habiamos visto, pero es muy útil para recorrer objetos, su funcionamiento es sencillo y se puede entender como un for que recorre las propiedades de un objeto. En el ejemplo quiere decir que se crea la variable propiedad `let propiedad` que va a recorrer cada propiedad del objeto `persona` con el `in` y luego se imprime la propiedad y el valor de la propiedad.
+
+Esto significa que al recorrer el objeto `persona` con un bucle `for...in`, se imprimirá cada propiedad del objeto en la consola. En este caso, se imprimirán las propiedades `nombre: Juan`, `edad: 30` y `casado: false`.
+
+cosas a tener en cuenta:
+
+- Se utiliza un bucle `for...in` para recorrer el objeto. El ```for...in``` es solo para objetos, no para arreglos.
+- La variable `propiedad` se utiliza para acceder a cada propiedad del objeto.
+- La expresión `persona[propiedad]` se utiliza para acceder al valor de cada propiedad del objeto.
+- Se puede utilizar el bucle `for...in` para realizar operaciones con cada propiedad del objeto, como imprimirlas, modificarlas, eliminarlas, y más.
+
+### Retos
+
+- Realizar un programa que reciba un objeto con las propiedades `nombre`, `edad`, `casado` y devuelva un mensaje con la información de la persona.
+- Realizar un programa que reciba un objeto con las propiedades `nombre`, `edad`, `casado` y devuelva un mensaje con la información de la persona, pero si la persona está casada, devolver un mensaje diferente.
+- Realizar un programa que reciba un objeto con las propiedades `nombre`, `edad`, `casado` y devuelva un mensaje con la información de la persona, pero si la persona es mayor de edad, devolver un mensaje diferente.
+- Realizar un programa que reciba un objeto con las propiedades `nombre`, `edad`, `casado` y devuelva un mensaje con la información de la persona, pero si la persona es mayor de edad y está casada, devolver un mensaje diferente.
+- Realizar un programa que reciba un objeto con las propiedades `nombre`, `edad`, `casado` y devuelva un mensaje con la información de la persona, pero si la persona es mayor de edad y está casada, devolver un mensaje diferente, y si la persona es menor de edad y está soltera, devolver un mensaje diferente.
+
+### Tipos de for
+
+Hasta ahora hemos visto el `for` y el `for...in`, pero hay otro tipo de for que es muy útil, el `for...of`. El `for...of` se utiliza para recorrer arreglos y otros objetos iterables, como cadenas de texto, mapas, conjuntos, y más. Es muy útil cuando se necesita recorrer los elementos de un arreglo y realizar operaciones con cada elemento.
+
+```javascript
+let colores = ["rojo", "verde", "azul"];
+
+for (let color of colores) {
+    console.log(color); // Imprimir cada elemento del arreglo
+}
+```
+
+Esto significa que al recorrer el arreglo `colores` con un bucle `for...of`, se imprimirá cada elemento del arreglo en la consola. En este caso, se imprimirán los valores `"rojo"`, `"verde"` y `"azul"`. Podemos notar que no necesitamos un indice para acceder a los elementos, sino que accedemos directamente al elemento. ¿Entonces cuando usar `for` y cuando usar `for...of`? Pues si necesitas el indice, usa `for`, si no necesitas el indice, usa `for...of`.
+
+### Retos
+
+Vamos a unos retos matematicos con javascript que intente combinar todo lo que hemos visto hasta ahora sobre javascript que es variables, condicionales, bucles, funciones, arreglos y objetos. Tener una buena logica es muy importante en la programación, y estos retos son para que vayas adquiriendo esa logica.
+> Nota: revisar [Math.random()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random), esto con el fin de que puedas generar números aleatorios, entonces como trabajamos con números y arreglos, podemos crear un arreglo y llenarlo con números aleatorios para realizar las pruebas.
+
+- Realizar un programa que calcule el area de un cuadrado.
+- Realizar un programa que calcule el area de un rectangulo.
+- Realizar un programa que calcule el area de un triangulo.
+- Realizar un programa que calcule el area de un circulo.
+- Realizar un programa que calcule el area de una figura dada.
+- Realizar un programa que dado un arreglo de numeros, devuelva el valor maximo, el valor minimo y el promedio.
+- Realizar un programa que dado un arreglo de numeros, almacenar en un objeto la cantidad de numeros pares, la cantidad de numeros impares y la cantidad de ceros.
+
+## Algoritmos básicos y lógica de programación
+
+Vamos a entrar en un tema muy importante en la programación, los algoritmos. Un algoritmo es un conjunto de instrucciones o reglas que se utilizan para resolver un problema o realizar una tarea. Los algoritmos son la base de la programación, ya que permiten dividir un problema en partes más pequeñas y fáciles de entender, y luego combinar esas partes para obtener una solución.
+
+Entonces la idea es mejorar la lógica de programación, y para eso vamos a realizar una serie de ejercicios que nos ayudarán a mejorar la lógica de programación y a entender cómo se resuelven problemas con algoritmos.
+
+### Importancia de pseudocódigo
+
+El pseudocódigo es una forma de escribir algoritmos en un lenguaje sencillo y comprensible, que se utiliza para planificar y diseñar programas antes de escribir el código en un lenguaje de programación. El pseudocódigo es muy útil para organizar las ideas, definir los pasos a seguir, y resolver problemas de forma clara y estructurada.
+
+El pseudocódigo se utiliza para describir los pasos que se deben seguir para resolver un problema, sin preocuparse por la sintaxis de un lenguaje de programación específico. El pseudocódigo se puede escribir en cualquier idioma, pero se recomienda utilizar un lenguaje sencillo y claro para que sea fácil de entender.
+
+Veamos un ejemplo:
+
+Problema: Realizar un programa que busque un número en un arreglo y devuelva la posición del número si se encuentra, o -1 si no se encuentra.
+
+Recordar que un computador entiende es objeto por objeto, posición por posición, entonces a veces nuestra mente puede pensar en un problema de una forma más abstracta, pero el computador necesita instrucciones claras y precisas. Por ejemplo, si tenemos un arreglo de 5 elementos, y queremos buscar un número, nuestra mente puede pensar como pues ahí en la mitad del arreglo, pero el computador necesita instrucciones claras y precisas, como recorrer el arreglo, comparar el número con cada elemento, si encuentra el número, devolver la posición, si no encuentra el número, devolver -1.
+
+```plaintext
+
+Inicio
+
+Definir un arreglo de números
+Definir un número a buscar
+
+Para cada elemento del arreglo
+    Si el elemento es igual al número a buscar
+        Devolver la posición del elemento
+    Fin Si
+Fin Para
+
+Devolver -1
+
+Fin
+
+```
+
+Este es un ejemplo de pseudocódigo para el problema de buscar un número en un arreglo. Como puedes ver, el pseudocódigo describe los pasos que se deben seguir para resolver el problema, sin preocuparse por la sintaxis de un lenguaje de programación específico. El pseudocódigo es muy útil para planificar y diseñar programas antes de escribir el código en un lenguaje de programación. Recuerda lo que dije una vez, entender el lenguaje natural puede ayudarnos a observar que hay palabras que de una vez su interpretación nos ayuda para saber que estructura de control debemos utilizar, por ejemplo, si vemos la palabra "si" sabemos que es una estructura de control condicional, si vemos la palabra "para" sabemos que es una estructura de control de bucle, y así sucesivamente.
+
+Entonces que sucede, la programación no es definitiva, es decir, no hay una sola forma de resolver un problema, entonces si tu tienes una forma de resolver un problema, y otra persona tiene otra forma de resolver el problema, no significa que una sea mejor que la otra, sino que son diferentes formas de resolver el problema. (Por el momento vamos a decir que ninguna es mejor que la otra, pero en la programación hay algo que se llama eficiencia, y es importante tener en cuenta la eficiencia de un algoritmo, pero eso lo veremos más adelante; o bueno, en la vida real, a veces podemos encontrar una forma de resolver un problema que sea más eficiente que otra, pero eso no significa que la otra forma sea mala, sino que es menos eficiente).
+
+### Retos
+
+Vamos a realizar pseudocódigo e implementar.
+
+- Realizar un programa que busque un número en un arreglo y devuelva la posición del número si se encuentra, o -1 si no se encuentra.
+- Ordenar un arreglo de números de menor a mayor.
+- Ordenar un arreglo de números de mayor a menor.
+- Realizar un programa que dado un arreglo aleatorio de números, me diga de alguna forma cuantos numeros hay de cada uno. Es decir, ejemplo me diga cuantos 1, cuantos 2, cuantos 3, y así sucesivamente.
+- Escribe un programa que imprima los números del 1 al 100, pero en los múltiplos de 3 imprime "Fizz", en los múltiplos de 5 "Buzz", y en los múltiplos de ambos "FizzBuzz".
+- Crea una función que encuentre el número más grande en un arreglo.
+- Dado un string, escribe una función que cuente cuántas vocales contiene.
+- Dada una palabra, imprimir la palabra al revés (Derecha a izquierda).
