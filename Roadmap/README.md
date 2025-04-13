@@ -24,10 +24,16 @@ Bienvenid@ a este roadmap de desarrollo frontend. Aquí encontrarás una guía e
 4. [Introducción a Git](./04-introduccion-git.md)
 5. [Git: Parte 2](./05-git-parte-2.md)
 6. [Trabajar con un Repositorio Remoto](./06-git-remoto.md)
-7. ... En construcción
+7. [Introducción a JavaScript](./07-introduccion_javascript_basico.md)
+8. [Operadores Básicos en JavaScript](./08_operadores_basicos_javascript.md)
+9. ... En construcción
+
+---
 
 > **Tip:** W3Schools es un excelente sitio para reforzar HTML y CSS. [Link](https://www.w3schools.com/).
+
 ---
+
 > Hay un documento que contiene conceptos claves en programación frontend. Recomiendo leerlo de vez en cuando porque hay conceptos que sirven o vas a aprender en el camino. [Aquí](./conceptos-importantes.md).
 
 **¡Y muy importante, disfruta del proceso!** 🚀
